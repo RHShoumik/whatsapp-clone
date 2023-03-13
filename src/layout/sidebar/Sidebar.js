@@ -19,7 +19,7 @@ const Sidebar = () => {
           <GroupsIcon />
           <DonutLargeIcon />
           <ChatIcon />
-          <MoreVertIcon />
+          <MoreVertIcon />  
         </div>
       </div>
       <div className="Sidebar--search">
