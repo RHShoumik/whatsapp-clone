@@ -1,3 +1,20 @@
 .Sidebar{
-    background-color: #E3E2DE;
+
+    background-color: #fff;
+    width: 20vw;
+
+    &--header{
+
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 16px;
+
+
+        &--left{
+
+        }
+        &--right{
+            
+        }
+    }
 }
