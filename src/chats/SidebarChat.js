@@ -10,7 +10,7 @@ const SidebarChat = () => {
             <h2>Name</h2>
             <h4>last Massage</h4>
         </Box>
-        <h4>Time</h4>
+        <h4>Tim</h4>
     </Stack>
   )
 }
