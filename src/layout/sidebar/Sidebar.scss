@@ -1,33 +1,41 @@
  @import "../../variables.scss";
 
-.Sidebar{
+ .Sidebar {
 
-    background-color: #fff;
-    width: 20vw;
+     background-color: #fff;
+     flex: 0.25;
 
-    &--header{
+     &--header {
 
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 16px;
-        background-color: $primary-color;
+         display: flex;
+         justify-content: space-between;
+         padding: 10px 16px;
+         background-color: $primary-color;
+         border-right: 0.5px solid $border-color;
 
 
-        &--left{
+         &--left {}
 
-        }
-        &--right{
-            &--items{
-                padding-inline: 5px;
-            }
-        }
-    }
-    &--search{
-        &--search-box{
+         &--right {
+             &--items {
+                 padding-inline: 5px;
+             }
+         }
+     }
 
-        }
-        &--icon{
-            
-        }
-    }
-}
+     &--search {
+         border-bottom: .5px solid $border-color;
+
+         &--search-box {
+            margin: 10px;
+            background-color: $primary-color;
+             border-radius: 5px;
+             display: flex;
+             flex-direction: row;
+             align-items: center;
+             padding-inline: 5px;
+         }
+
+         &--icon {}
+     }
+ }

@@ -8,7 +8,8 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import SearchIcon from '@mui/icons-material/Search';
 
 import "./Sidebar.scss"
-import { Input, InputAdornment, TextField } from "@mui/material";
+import { IconButton, Input, InputAdornment, TextField } from "@mui/material";
+import SidebarChat from "../../chats/SidebarChat";
 
 const Sidebar = () => {
   return (
@@ -18,26 +19,33 @@ const Sidebar = () => {
           <AccountCircleIcon className="icon" />
         </div>
         <div className="Sidebar--header--right">
-          <GroupsIcon className="Sidebar--header--right--items icon"/>
-          <DonutLargeIcon className="Sidebar--header--right--items icon" />
-          <ChatIcon className="Sidebar--header--right--items icon" />
-          <MoreVertIcon className="Sidebar--header--right--items icon" />  
+          <IconButton>
+            <GroupsIcon className="Sidebar--header--right--items icon" />
+          </IconButton>
+          <IconButton>
+            <DonutLargeIcon className="Sidebar--header--right--items icon" />
+          </IconButton>
+          <IconButton>
+            <ChatIcon className="Sidebar--header--right--items icon" />
+          </IconButton>
+          <IconButton>
+            <MoreVertIcon className="Sidebar--header--right--items icon" />
+          </IconButton>
         </div>
       </div>
       <div className="Sidebar--search">
         <div className="Sidebar--search--search-box">
+          <SearchIcon alignItems="center" />
           <TextField
-            sx={{width:"18vw", height:"48px" }}
-            InputProps={{
-              startAdornment: <InputAdornment position="start"><SearchIcon /></InputAdornment>,
-            }}
+            fullWidth
+            placeholder="Search or start new chat"
+            sx={{"& fieldset": { border: 'none' } }}
           />
         </div>
         <div className="Sidebar--search--icon"></div>
-
-      </div> 
+      </div>
       <div className="Sidebar--chats">
-
+        <SidebarChat />
       </div>
     </div>
   )
