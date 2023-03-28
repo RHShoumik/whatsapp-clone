@@ -1,0 +1,21 @@
+@import "../variables.scss";
+
+.SidebarChat{
+    padding: 10px;
+
+    &--avatar{
+
+    }
+    &--content{
+
+        &--username-time{
+            width: 300px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+
+    }
+
+}
