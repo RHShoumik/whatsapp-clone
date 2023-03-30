@@ -1,19 +1,24 @@
 @import "../variables.scss";
 
 .SidebarChat{
-    padding: 10px;
+    padding: 10px 15px 0px 10px;
 
     &--avatar{
 
     }
     &--content{
+        margin-left: 10px;
+        border-bottom: .05px solid $border-color;
+        width: 100%;
 
         &--username-time{
-            width: 300px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+        }
 
+        &--lastMsg{
+            padding-block: 3px;
         }
 
     }

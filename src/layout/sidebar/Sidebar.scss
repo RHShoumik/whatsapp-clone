@@ -4,6 +4,10 @@
 
      background-color: #fff;
      flex: 0.25;
+     overflow: hidden;
+
+    //  overflow-x: hidden;
+    //  overflow-y: auto;
 
      &--header {
 
@@ -27,8 +31,8 @@
          border-bottom: .5px solid $border-color;
 
          &--search-box {
-            margin: 10px;
-            background-color: $primary-color;
+             margin: 10px;
+             background-color: $primary-color;
              border-radius: 5px;
              display: flex;
              flex-direction: row;
@@ -37,5 +41,10 @@
          }
 
          &--icon {}
+     }
+
+     &--chats {
+         overflow: scroll;
+         height: 80vh;
      }
  }

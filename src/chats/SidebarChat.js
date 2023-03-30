@@ -12,7 +12,7 @@ const SidebarChat = () => {
           <Typography>User Name</Typography>
           <Typography>time</Typography>
         </Box>
-        <Typography>last massage</Typography>
+        <Typography className="SidebarChat--content--lastMsg">last massage</Typography>
       </Box>
     </Stack>
   )
