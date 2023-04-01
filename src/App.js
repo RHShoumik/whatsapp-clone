@@ -1,5 +1,6 @@
 import './App.scss';
 import Sidebar from "./layout/sidebar/Sidebar";
+import ChatPage from "./pages/ChatPage/ChatPage";
 import WelcomePage from "./pages/WelcomePage/WelcomePage";
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
     <div className="App">
       <div className='App--body'>
         <Sidebar />
-        <WelcomePage />
+        {/* <WelcomePage /> */}
+        <ChatPage />
 
       </div>
     </div>
